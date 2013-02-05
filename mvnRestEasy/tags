@@ -1,0 +1,266 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACTIONS	.\src\main\java\test\TaskFactory.java	/^    private static final String ACTIONS = "actions";$/;"	f	class:TaskFactory	file:
+Attribute	.\src\main\java\test\events\EventField.java	/^    public enum Attribute {$/;"	g	class:EventField
+AuthorResponse	.\src\main\java\test\events\AuthorResponse.java	/^public class AuthorResponse$/;"	c
+COMPLETE	.\src\main\java\test\Permission.java	/^    VIEW, EDIT, DELETE, CREATE, COMPLETE, REASSIGN;$/;"	e	enum:Permission	file:
+CONTEXT_ID	.\src\test\java\test\EventDispatcherTestIT.java	/^	private static final String CONTEXT_ID = "12345678-02";$/;"	f	class:EventDispatcherTestIT	file:
+CONTEXT_TYPE	.\src\test\java\test\EventDispatcherTestIT.java	/^	private static final String CONTEXT_TYPE = "requestSignatureWorkflow";$/;"	f	class:EventDispatcherTestIT	file:
+CREATE	.\src\main\java\test\Permission.java	/^    VIEW, EDIT, DELETE, CREATE, COMPLETE, REASSIGN;$/;"	e	enum:Permission	file:
+CaseData	.\src\main\java\test\Resource.java	/^    CaseData, OfficeAction;$/;"	e	enum:Resource	file:
+DELETE	.\src\main\java\test\Permission.java	/^    VIEW, EDIT, DELETE, CREATE, COMPLETE, REASSIGN;$/;"	e	enum:Permission	file:
+EDIT	.\src\main\java\test\Permission.java	/^    VIEW, EDIT, DELETE, CREATE, COMPLETE, REASSIGN;$/;"	e	enum:Permission	file:
+EMAIL	.\src\test\java\test\EventDispatcherTestIT.java	/^    private static final String EMAIL = "francis.delacruz@uspto.gov";$/;"	f	class:EventDispatcherTestIT	file:
+ENUM	.\src\main\java\test\events\EventField.java	/^        REQUIRED, OPTIONAL, ENUM$/;"	e	enum:EventField.Attribute	file:
+EnumEventField	.\src\main\java\test\events\EnumEventField.java	/^    public EnumEventField(String interfaceKey, String workflowKey, EnumSet<E> enums){$/;"	m	class:EnumEventField
+EnumEventField	.\src\main\java\test\events\EnumEventField.java	/^public class EnumEventField<E extends Enum<E>> extends EventField {$/;"	c
+EnumEventSerializer	.\src\main\java\test\events\EnumEventSerializer.java	/^public class EnumEventSerializer extends JsonSerializer<EnumEventField> {$/;"	c
+EnumValidator	.\src\main\java\test\events\GenericResponse.java	/^    public class EnumValidator implements EventField.Validator {$/;"	c	class:GenericResponse
+Event	.\src\main\java\test\events\Event.java	/^public class Event \/*implements Externalizable*\/ {$/;"	c
+EventDispatcher	.\src\main\java\test\EventDispatcher.java	/^public class EventDispatcher {$/;"	c
+EventDispatcherTestIT	.\src\test\java\test\EventDispatcherTestIT.java	/^public class EventDispatcherTestIT extends EventDispatcher {$/;"	c
+EventField	.\src\main\java\test\events\EventField.java	/^    public EventField($/;"	m	class:EventField
+EventField	.\src\main\java\test\events\EventField.java	/^    public EventField(String interfaceKey, String workflowKey){$/;"	m	class:EventField
+EventField	.\src\main\java\test\events\EventField.java	/^public class EventField {$/;"	c
+EventHelper	.\src\main\java\test\events\EventHelper.java	/^    public EventHelper(MultivaluedMap<String,String> form){$/;"	m	class:EventHelper
+EventHelper	.\src\main\java\test\events\EventHelper.java	/^    public EventHelper(String clazz){$/;"	m	class:EventHelper
+EventHelper	.\src\main\java\test\events\EventHelper.java	/^public class EventHelper {$/;"	c
+EventSerializer	.\src\main\java\test\events\EventSerializer.java	/^public class EventSerializer extends JsonSerializer<EventField> {$/;"	c
+EventService	.\src\main\java\test\EventService.java	/^public class EventService {$/;"	c
+ExaminerResponse	.\src\main\java\test\events\ExaminerResponse.java	/^public class ExaminerResponse$/;"	c
+GET	.\src\main\java\test\TaskClient.java	/^    private String GET(String url, String contentType){$/;"	m	class:TaskClient	file:
+GenericResponse	.\src\main\java\test\events\GenericResponse.java	/^public abstract class GenericResponse$/;"	c
+Group	.\src\main\java\test\Group.java	/^    public Group($/;"	m	class:Group
+Group	.\src\main\java\test\Group.java	/^public class Group {$/;"	c
+ID	.\src\main\java\test\TaskFactory.java	/^    private static final String ID = "id";$/;"	f	class:TaskFactory	file:
+JSON	.\src\main\java\test\TaskClient.java	/^    private String JSON = "application\/json";$/;"	f	class:TaskClient	file:
+MyServices	.\src\main\java\test\MyServices.java	/^    public  MyServices() {$/;"	m	class:MyServices
+MyServices	.\src\main\java\test\MyServices.java	/^public class MyServices extends Application  {$/;"	c
+NAMESPACE	.\src\main\java\test\events\Event.java	/^    private String NAMESPACE = "genericEvent";$/;"	f	class:Event	file:
+NS	.\src\main\java\test\TaskFactory.java	/^    private static final String NS = "processId";$/;"	f	class:TaskFactory	file:
+NS_SEPARATOR	.\src\main\java\test\TaskFactory.java	/^    private static final String NS_SEPARATOR = ".";$/;"	f	class:TaskFactory	file:
+OPTIONAL	.\src\main\java\test\events\EventField.java	/^        REQUIRED, OPTIONAL, ENUM$/;"	e	enum:EventField.Attribute	file:
+OfficeAction	.\src\main\java\test\Resource.java	/^    CaseData, OfficeAction;$/;"	e	enum:Resource	file:
+Permission	.\src\main\java\test\Permission.java	/^public enum Permission {$/;"	g
+REASSIGN	.\src\main\java\test\Permission.java	/^    VIEW, EDIT, DELETE, CREATE, COMPLETE, REASSIGN;$/;"	e	enum:Permission	file:
+REQUIRED	.\src\main\java\test\events\EventField.java	/^        REQUIRED, OPTIONAL, ENUM$/;"	e	enum:EventField.Attribute	file:
+RequestSignatureEvent	.\src\main\java\test\events\RequestSignatureEvent.java	/^public class RequestSignatureEvent$/;"	c
+Resource	.\src\main\java\test\Resource.java	/^public enum Resource {$/;"	g
+Response	.\src\main\java\test\events\GenericResponse.java	/^    public enum Response {$/;"	g	class:GenericResponse
+Role	.\src\main\java\test\Role.java	/^    public Role(String roleName){$/;"	m	class:Role
+Role	.\src\main\java\test\Role.java	/^public class Role {$/;"	c
+SPEResponse	.\src\main\java\test\events\SPEResponse.java	/^public class SPEResponse$/;"	c
+SPLITTER	.\src\main\java\test\TaskFactory.java	/^    private static final String SPLITTER = ",";$/;"	f	class:TaskFactory	file:
+Task	.\src\main\java\test\Task.java	/^    public Task(String taskId, String namespace, Map<String, String> properties){$/;"	m	class:Task
+Task	.\src\main\java\test\Task.java	/^public class Task {$/;"	c
+TaskClient	.\src\main\java\test\TaskClient.java	/^public class TaskClient {$/;"	c
+TaskClientIT	.\src\test\java\test\TaskClientIT.java	/^public class TaskClientIT {$/;"	c
+TaskFactory	.\src\main\java\test\TaskFactory.java	/^    public TaskFactory(){$/;"	m	class:TaskFactory
+TaskFactory	.\src\main\java\test\TaskFactory.java	/^public class TaskFactory {$/;"	c
+TaskFactoryTest	.\src\test\java\test\TaskFactoryTest.java	/^public class TaskFactoryTest {$/;"	c
+Transformer	.\src\main\java\test\events\EventField.java	/^    public interface Transformer {$/;"	i	class:EventField
+User	.\src\main\java\test\User.java	/^    public User (String loginId, String firstName, String lastName){$/;"	m	class:User
+User	.\src\main\java\test\User.java	/^    public User (String username){$/;"	m	class:User
+User	.\src\main\java\test\User.java	/^public class User {$/;"	c
+UserDAO	.\src\main\java\test\UserDAO.java	/^public class UserDAO {$/;"	c
+UserService	.\src\main\java\test\UserService.java	/^public class UserService {$/;"	c
+VIEW	.\src\main\java\test\Permission.java	/^    VIEW, EDIT, DELETE, CREATE, COMPLETE, REASSIGN;$/;"	e	enum:Permission	file:
+Validator	.\src\main\java\test\events\EventField.java	/^    public interface Validator {$/;"	i	class:EventField
+WorkflowEvent	.\src\main\java\test\events\WorkflowEvent.java	/^public interface WorkflowEvent {$/;"	i
+actionsURL	.\src\main\java\test\TaskClient.java	/^    private String actionsURL = urlBase + "\/tasks\/{task}\/actions";$/;"	f	class:TaskClient	file:
+add	.\src\main\java\test\events\EventField.java	/^    public EventField add(EventField.Attribute attr){$/;"	m	class:EventField
+add	.\src\main\java\test\events\EventField.java	/^    public EventField add(EventField.Validator validator){$/;"	m	class:EventField
+array	.\src\main\java\test\events\EventSerializer.java	/^    public String array(List<EventField.Attribute> attributes){$/;"	m	class:EventSerializer
+assignedTasksForUser	.\src\main\java\test\TaskClient.java	/^    private String assignedTasksForUser = urlBase + "\/user\/tasks\/assigned\/{user}";$/;"	f	class:TaskClient	file:
+attributes	.\src\main\java\test\events\EventField.java	/^    private List<EventField.Attribute> attributes;$/;"	f	class:EventField	file:
+availableTasksForUser	.\src\main\java\test\TaskClient.java	/^    private String availableTasksForUser = urlBase + "\/tasks\/available\/{user}";$/;"	f	class:TaskClient	file:
+c_param	.\src\main\java\test\events\EventSerializer.java	/^    public String c_param(String key, String... values){$/;"	m	class:EventSerializer
+cancelled	.\src\main\java\test\events\GenericResponse.java	/^        signed, rejected, cancelled$/;"	e	enum:GenericResponse.Response	file:
+cf	.\src\main\java\test\EventDispatcher.java	/^	private static ConnectionFactory cf = null;$/;"	f	class:EventDispatcher	file:
+closeConnection	.\src\main\java\test\EventDispatcher.java	/^	private static void closeConnection(Connection con) {$/;"	m	class:EventDispatcher	file:
+closeQueueConnection	.\src\main\java\test\EventDispatcher.java	/^    public static void closeQueueConnection() throws Exception {$/;"	m	class:EventDispatcher
+concrete	.\src\main\java\test\events\EventHelper.java	/^    Class                           concrete;$/;"	f	class:EventHelper
+connection	.\src\main\java\test\EventDispatcher.java	/^	private static Connection connection = null;$/;"	f	class:EventDispatcher	file:
+construct	.\src\main\java\test\events\EventHelper.java	/^    private void construct(String clazz){$/;"	m	class:EventHelper	file:
+constructor	.\src\main\java\test\events\EventHelper.java	/^    Constructor                     constructor;$/;"	f	class:EventHelper
+context	.\src\main\java\test\events\Event.java	/^    private Map<String, String> context;$/;"	f	class:Event	file:
+createTask	.\src\main\java\test\TaskFactory.java	/^    private Task createTask(JsonParser jParser)$/;"	m	class:TaskFactory	file:
+createTask	.\src\main\java\test\TaskFactory.java	/^    private Task createTask(String rawTaskJson)$/;"	m	class:TaskFactory	file:
+createTask	.\src\main\java\test\TaskFactory.java	/^    public Task createTask(String rawTaskJson, String rawActionsJson) {$/;"	m	class:TaskFactory
+createTasks	.\src\main\java\test\TaskFactory.java	/^    public List<Task> createTasks(String rawTasksJson) {$/;"	m	class:TaskFactory
+defaultValues	.\src\main\java\test\events\GenericResponse.java	/^    public Map<String, String> defaultValues(){$/;"	m	class:GenericResponse
+defaultValues	.\src\main\java\test\events\RequestSignatureEvent.java	/^    public Map<String, String> defaultValues(){$/;"	m	class:RequestSignatureEvent
+defaultValues	.\src\main\java\test\events\WorkflowEvent.java	/^    public Map<String, String> defaultValues();$/;"	m	interface:WorkflowEvent
+describeFields	.\src\main\java\test\events\GenericResponse.java	/^    public List<EventField> describeFields(){$/;"	m	class:GenericResponse
+describeFields	.\src\main\java\test\events\RequestSignatureEvent.java	/^    public List<EventField> describeFields(){$/;"	m	class:RequestSignatureEvent
+describeFields	.\src\main\java\test\events\WorkflowEvent.java	/^    public List<EventField> describeFields();$/;"	m	interface:WorkflowEvent
+destinationName	.\src\main\java\test\EventDispatcher.java	/^	private static String destinationName = "queues\/pe2e_events";$/;"	f	class:EventDispatcher	file:
+emit	.\src\main\java\test\EventDispatcher.java	/^    public static void emit(Event event) throws JMSException {$/;"	m	class:EventDispatcher
+enums	.\src\main\java\test\events\EnumEventField.java	/^    private EnumSet<E> enums;$/;"	f	class:EnumEventField	file:
+errors	.\src\main\java\test\events\EventHelper.java	/^    Map<String,List<String>>        errors;$/;"	f	class:EventHelper
+events	.\src\main\java\test\Task.java	/^    public List<Event> events;$/;"	f	class:Task
+failReason	.\src\main\java\test\events\GenericResponse.java	/^        List<String> failReason;$/;"	f	class:GenericResponse.EnumValidator
+fields	.\src\main\java\test\events\Event.java	/^    private Map<String, EventField> fields = new HashMap<String, EventField>();$/;"	f	class:Event	file:
+firstName	.\src\main\java\test\User.java	/^    public String firstName;$/;"	f	class:User
+form	.\src\main\java\test\events\EventHelper.java	/^    MultivaluedMap<String,String>   form;$/;"	f	class:EventHelper
+getActions	.\src\main\java\test\TaskClient.java	/^    String getActions(String taskId){$/;"	m	class:TaskClient
+getAssignedTasksForUser	.\src\main\java\test\TaskClient.java	/^    String getAssignedTasksForUser(String userId){$/;"	m	class:TaskClient
+getAssignedTasksForUserWithActions	.\src\main\java\test\TaskClient.java	/^    public List<Task> getAssignedTasksForUserWithActions(String userId){$/;"	m	class:TaskClient
+getAttributes	.\src\main\java\test\events\EventField.java	/^    public List<EventField.Attribute> getAttributes(){$/;"	m	class:EventField
+getAvailableTasksForUser	.\src\main\java\test\TaskClient.java	/^    String getAvailableTasksForUser(String userId){$/;"	m	class:TaskClient
+getContext	.\src\main\java\test\events\Event.java	/^    public final Map<String, String> getContext(){$/;"	m	class:Event
+getDefaultTransformer	.\src\main\java\test\events\EventField.java	/^    public EventField.Transformer getDefaultTransformer(){$/;"	m	class:EventField
+getDefaultValidator	.\src\main\java\test\events\EventField.java	/^    public EventField.Validator getDefaultValidator(){$/;"	m	class:EventField
+getEnums	.\src\main\java\test\events\EnumEventField.java	/^    public EnumSet<E> getEnums(){$/;"	m	class:EnumEventField
+getEvent	.\src\main\java\test\events\EventHelper.java	/^    public Event getEvent(){$/;"	m	class:EventHelper
+getEvent	.\src\test\java\test\TaskFactoryTest.java	/^    public void getEvent(){$/;"	m	class:TaskFactoryTest
+getEvent2	.\src\test\java\test\TaskFactoryTest.java	/^    public void getEvent2(){$/;"	m	class:TaskFactoryTest
+getEventFields	.\src\main\java\test\events\Event.java	/^    private Map<String, EventField> getEventFields(){$/;"	m	class:Event	file:
+getFailReason	.\src\main\java\test\events\EventField.java	/^        public List<String> getFailReason();$/;"	m	interface:EventField.Validator
+getFailReason	.\src\main\java\test\events\GenericResponse.java	/^        public List<String> getFailReason(){$/;"	m	class:GenericResponse.EnumValidator
+getFields	.\src\main\java\test\events\Event.java	/^    public Collection<EventField> getFields(){$/;"	m	class:Event
+getGroup	.\src\main\java\test\User.java	/^    public Group getGroup(String group){$/;"	m	class:User
+getGroups	.\src\main\java\test\User.java	/^    public List<Group> getGroups(){$/;"	m	class:User
+getInitialContext	.\src\main\java\test\EventDispatcher.java	/^	public static Context getInitialContext() throws javax.naming.NamingException {$/;"	m	class:EventDispatcher
+getInstance	.\src\main\java\test\events\EventHelper.java	/^    private Object getInstance(){$/;"	m	class:EventHelper	file:
+getPermissions	.\src\main\java\test\Role.java	/^    public Map<Resource, List<Permission>> getPermissions(){$/;"	m	class:Role
+getPublisher	.\src\main\java\test\EventDispatcher.java	/^    public static MessageProducer getPublisher() {$/;"	m	class:EventDispatcher
+getResponseName	.\src\main\java\test\events\AuthorResponse.java	/^    public String getResponseName(){$/;"	m	class:AuthorResponse
+getResponseName	.\src\main\java\test\events\ExaminerResponse.java	/^    public String getResponseName(){$/;"	m	class:ExaminerResponse
+getResponseName	.\src\main\java\test\events\GenericResponse.java	/^    public abstract String getResponseName();$/;"	m	class:GenericResponse
+getResponseName	.\src\main\java\test\events\SPEResponse.java	/^    public String getResponseName(){$/;"	m	class:SPEResponse
+getRoles	.\src\main\java\test\Group.java	/^    public List<Role> getRoles(){$/;"	m	class:Group
+getRolesForGroup	.\src\main\java\test\User.java	/^    public List<Role> getRolesForGroup(String group){$/;"	m	class:User
+getServices	.\src\main\java\test\MyServices.java	/^    public  static Set getServices() {$/;"	m	class:MyServices
+getSession	.\src\main\java\test\EventDispatcher.java	/^    public static Session getSession() {$/;"	m	class:EventDispatcher
+getSingletons	.\src\main\java\test\MyServices.java	/^    public  Set getSingletons() {$/;"	m	class:MyServices
+getTask	.\src\main\java\test\TaskClient.java	/^    String getTask(String taskId){$/;"	m	class:TaskClient
+getTask	.\src\main\java\test\UserService.java	/^	public Response getTask($/;"	m	class:UserService
+getTaskWithActions	.\src\main\java\test\TaskClient.java	/^    public Task getTaskWithActions(String taskId){$/;"	m	class:TaskClient
+getTasks	.\src\main\java\test\UserService.java	/^	public Response getTasks(@PathParam("userName") String username) {$/;"	m	class:UserService
+getTasksForGroup	.\src\main\java\test\TaskClient.java	/^    String getTasksForGroup(){$/;"	m	class:TaskClient
+getType	.\src\main\java\test\events\AuthorResponse.java	/^    public String getType(){$/;"	m	class:AuthorResponse
+getType	.\src\main\java\test\events\ExaminerResponse.java	/^    public String getType(){$/;"	m	class:ExaminerResponse
+getType	.\src\main\java\test\events\GenericResponse.java	/^    public abstract String getType();$/;"	m	class:GenericResponse
+getType	.\src\main\java\test\events\SPEResponse.java	/^    public String getType(){$/;"	m	class:SPEResponse
+getUser	.\src\main\java\test\UserDAO.java	/^    public User getUser(String userId){$/;"	m	class:UserDAO
+getUser	.\src\main\java\test\UserService.java	/^	public Response getUser($/;"	m	class:UserService
+getUser	.\src\main\java\test\UserService.java	/^	public Response getUser(@PathParam("userName") String username) {$/;"	m	class:UserService
+getValue	.\src\main\java\test\events\EventField.java	/^    public String getValue(){$/;"	m	class:EventField
+getWorkflowValue	.\src\main\java\test\events\EventField.java	/^    public String getWorkflowValue(){$/;"	m	class:EventField
+groups	.\src\main\java\test\User.java	/^    public List<Group> groups;$/;"	f	class:User
+ic	.\src\main\java\test\EventDispatcher.java	/^	private static Context ic = null;$/;"	f	class:EventDispatcher	file:
+id	.\src\main\java\test\User.java	/^    public Long id;$/;"	f	class:User
+init	.\src\main\java\test\UserDAO.java	/^    public void init(){$/;"	m	class:UserDAO
+init	.\src\main\java\test\events\Event.java	/^    protected void init(MultivaluedMap<String, String> form){$/;"	m	class:Event
+init	.\src\main\java\test\events\EventHelper.java	/^    private void init(MultivaluedMap<String, String> form){$/;"	m	class:EventHelper	file:
+initFields	.\src\main\java\test\events\Event.java	/^    private void initFields(){$/;"	m	class:Event	file:
+initFields	.\src\main\java\test\events\Event.java	/^    protected void initFields(List<EventField> fields){$/;"	m	class:Event
+initFields	.\src\main\java\test\events\EventHelper.java	/^    private void initFields(){$/;"	m	class:EventHelper	file:
+initValues	.\src\main\java\test\events\Event.java	/^    protected void initValues(Map<String, String> defaultValues){$/;"	m	class:Event
+initValues	.\src\main\java\test\events\EventHelper.java	/^    private void initValues(){$/;"	m	class:EventHelper	file:
+instance	.\src\main\java\test\events\EventHelper.java	/^    Object                          instance;$/;"	f	class:EventHelper
+interfaceKey	.\src\main\java\test\events\EventField.java	/^    public final String interfaceKey;$/;"	f	class:EventField
+jfactory	.\src\main\java\test\TaskFactory.java	/^    private static JsonFactory jfactory = new JsonFactory();$/;"	f	class:TaskFactory	file:
+lastName	.\src\main\java\test\User.java	/^    public String lastName;$/;"	f	class:User
+loginId	.\src\main\java\test\User.java	/^    public String loginId;$/;"	f	class:User
+mockDao	.\src\main\java\test\UserService.java	/^    private UserDAO mockDao = new UserDAO();$/;"	f	class:UserService	file:
+name	.\src\main\java\test\Group.java	/^    public String name;$/;"	f	class:Group
+name	.\src\main\java\test\Role.java	/^    public String name;$/;"	f	class:Role
+namespace	.\src\main\java\test\Task.java	/^    public String namespace;$/;"	f	class:Task
+namespace	.\src\main\java\test\events\EventHelper.java	/^    String                          namespace;$/;"	f	class:EventHelper
+namespace	.\src\main\java\test\events\GenericResponse.java	/^    public String namespace(){$/;"	m	class:GenericResponse
+namespace	.\src\main\java\test\events\RequestSignatureEvent.java	/^    public String namespace(){$/;"	m	class:RequestSignatureEvent
+namespace	.\src\main\java\test\events\WorkflowEvent.java	/^    public String namespace();$/;"	m	interface:WorkflowEvent
+object	.\src\main\java\test\events\EventSerializer.java	/^    public String object(String key, String... values){$/;"	m	class:EventSerializer
+permission	.\src\main\java\test\Role.java	/^    private Map<Resource, List<Permission>> permission;$/;"	f	class:Role	file:
+post	.\src\main\java\test\EventService.java	/^    public Response post(MultivaluedMap<String, String> form) {$/;"	m	class:EventService
+properties	.\src\main\java\test\Task.java	/^    public Map<String, String> properties;$/;"	f	class:Task
+properties	.\src\main\java\test\TaskFactory.java	/^    private Properties properties;$/;"	f	class:TaskFactory	file:
+publisher	.\src\main\java\test\EventDispatcher.java	/^	protected static MessageProducer publisher = null;$/;"	f	class:EventDispatcher
+push	.\src\main\java\test\UserDAO.java	/^    private void push(Role role, Resource resource, Permission permission){$/;"	m	class:UserDAO	file:
+push	.\src\main\java\test\events\Event.java	/^    protected void push(EventField field){$/;"	m	class:Event
+push	.\src\main\java\test\events\Event.java	/^    protected void push(String interfaceKey, String workflowKey, EventField.Attribute... attributes){$/;"	m	class:Event
+push	.\src\main\java\test\events\Event.java	/^    protected void push(String key, EventField.Attribute... attributes ){$/;"	m	class:Event
+push	.\src\main\java\test\events\Event.java	/^    public List<EventField> push($/;"	m	class:Event
+pushErr	.\src\main\java\test\events\EventHelper.java	/^    private void pushErr(String key, String val){$/;"	m	class:EventHelper	file:
+rejected	.\src\main\java\test\events\GenericResponse.java	/^        signed, rejected, cancelled$/;"	e	enum:GenericResponse.Response	file:
+roles	.\src\main\java\test\Group.java	/^    public List<Role> roles;$/;"	f	class:Group
+s	.\src\main\java\test\events\EventSerializer.java	/^    private String s(String s){$/;"	m	class:EventSerializer	file:
+s_param	.\src\main\java\test\events\EventSerializer.java	/^    public String s_param(String key, String value){$/;"	m	class:EventSerializer
+serialize	.\src\main\java\test\events\EnumEventSerializer.java	/^    public void serialize($/;"	m	class:EnumEventSerializer
+serialize	.\src\main\java\test\events\EventSerializer.java	/^    public void serialize($/;"	m	class:EventSerializer
+services	.\src\main\java\test\MyServices.java	/^    private static Set services = new HashSet();$/;"	f	class:MyServices	file:
+session	.\src\main\java\test\EventDispatcher.java	/^	protected static Session session = null;$/;"	f	class:EventDispatcher
+set	.\src\main\java\test\events\EventField.java	/^    public void set(String value){$/;"	m	class:EventField
+setActions	.\src\main\java\test\TaskFactory.java	/^    public void setActions(Task newTask, String rawActionsJson) {$/;"	m	class:TaskFactory
+setEvents	.\src\main\java\test\Task.java	/^    public void setEvents(List<Event> events) {$/;"	m	class:Task
+setNamespace	.\src\main\java\test\events\Event.java	/^    public void setNamespace(String namespace){$/;"	m	class:Event
+setUp	.\src\test\java\test\TaskClientIT.java	/^    public void setUp(){$/;"	m	class:TaskClientIT
+setValue	.\src\main\java\test\events\Event.java	/^    public void setValue(String key, String value){$/;"	m	class:Event
+setupQueueConnection	.\src\main\java\test\EventDispatcher.java	/^    public synchronized static void setupQueueConnection() {$/;"	m	class:EventDispatcher
+signatureAuthorityInd	.\src\main\java\test\Group.java	/^    public boolean signatureAuthorityInd;$/;"	f	class:Group
+signed	.\src\main\java\test\events\GenericResponse.java	/^        signed, rejected, cancelled$/;"	e	enum:GenericResponse.Response	file:
+supervisorInd	.\src\main\java\test\Group.java	/^    public boolean supervisorInd;$/;"	f	class:Group
+taskClient	.\src\main\java\test\UserService.java	/^    private TaskClient taskClient = new TaskClient();$/;"	f	class:UserService	file:
+taskFactory	.\src\main\java\test\TaskClient.java	/^    private TaskFactory taskFactory = new TaskFactory();;$/;"	f	class:TaskClient	file:
+taskId	.\src\main\java\test\Task.java	/^    public String taskId;$/;"	f	class:Task
+taskURL	.\src\main\java\test\TaskClient.java	/^    private String taskURL = urlBase + "\/tasks\/{task}";$/;"	f	class:TaskClient	file:
+tasksForGroup	.\src\main\java\test\TaskClient.java	/^    private String tasksForGroup = urlBase + "\/tasks\/available\/groups";$/;"	f	class:TaskClient	file:
+tc	.\src\test\java\test\TaskClientIT.java	/^    TaskClient tc;$/;"	f	class:TaskClientIT
+test	.\src\main\java\test\EventDispatcher.java	/^package test;$/;"	p
+test	.\src\main\java\test\EventService.java	/^package test;$/;"	p
+test	.\src\main\java\test\Group.java	/^package test;$/;"	p
+test	.\src\main\java\test\MyServices.java	/^package test;$/;"	p
+test	.\src\main\java\test\Permission.java	/^package test;$/;"	p
+test	.\src\main\java\test\Resource.java	/^package test;$/;"	p
+test	.\src\main\java\test\Role.java	/^package test;$/;"	p
+test	.\src\main\java\test\Task.java	/^package test;$/;"	p
+test	.\src\main\java\test\TaskClient.java	/^package test;$/;"	p
+test	.\src\main\java\test\TaskFactory.java	/^package test;$/;"	p
+test	.\src\main\java\test\User.java	/^package test;$/;"	p
+test	.\src\main\java\test\UserDAO.java	/^package test;$/;"	p
+test	.\src\main\java\test\UserService.java	/^package test;$/;"	p
+test	.\src\test\java\test\EventDispatcherTestIT.java	/^ package test;$/;"	p
+test	.\src\test\java\test\TaskClientIT.java	/^package test;$/;"	p
+test	.\src\test\java\test\TaskFactoryTest.java	/^package test;$/;"	p
+test.events	.\src\main\java\test\events\AuthorResponse.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\EnumEventField.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\EnumEventSerializer.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\Event.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\EventField.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\EventHelper.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\EventSerializer.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\ExaminerResponse.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\GenericResponse.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\RequestSignatureEvent.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\SPEResponse.java	/^package test.events;$/;"	p
+test.events	.\src\main\java\test\events\WorkflowEvent.java	/^package test.events;$/;"	p
+testAssignedTasksForUser	.\src\test\java\test\TaskClientIT.java	/^    public void testAssignedTasksForUser(){$/;"	m	class:TaskClientIT
+testAvailableTasksForUser	.\src\test\java\test\TaskClientIT.java	/^    public void testAvailableTasksForUser(){$/;"	m	class:TaskClientIT
+testGetActions	.\src\test\java\test\TaskClientIT.java	/^    public void testGetActions(){$/;"	m	class:TaskClientIT
+testGetAssignedTasksForUserWithActions	.\src\test\java\test\TaskClientIT.java	/^    public void testGetAssignedTasksForUserWithActions(){$/;"	m	class:TaskClientIT
+testGetTaskWithActions	.\src\test\java\test\TaskClientIT.java	/^    public void testGetTaskWithActions(){$/;"	m	class:TaskClientIT
+testGetTasksForGroup	.\src\test\java\test\TaskClientIT.java	/^    public void testGetTasksForGroup(){$/;"	m	class:TaskClientIT
+testSetupQueueConnection	.\src\test\java\test\EventDispatcherTestIT.java	/^    public void testSetupQueueConnection() {$/;"	m	class:EventDispatcherTestIT
+timestamp	.\src\main\java\test\events\Event.java	/^    private Date timestamp;$/;"	f	class:Event	file:
+toEvents	.\src\main\java\test\TaskFactory.java	/^    private List<Event> toEvents(String namespace, String rawTaskAction)$/;"	m	class:TaskFactory	file:
+toJson	.\src\main\java\test\EventService.java	/^    private static String toJson(Object form) {$/;"	m	class:EventService	file:
+toJson	.\src\main\java\test\UserService.java	/^    private static String toJson(Object user) {$/;"	m	class:UserService	file:
+toJson	.\src\test\java\test\TaskClientIT.java	/^    private static String toJson(Object form) {$/;"	m	class:TaskClientIT	file:
+toJson	.\src\test\java\test\TaskFactoryTest.java	/^    private static String toJson(Object form) {$/;"	m	class:TaskFactoryTest	file:
+toWorkflow	.\src\main\java\test\events\EventField.java	/^        public String toWorkflow(String value);$/;"	m	interface:EventField.Transformer
+transformer	.\src\main\java\test\events\EventField.java	/^    private EventField.Transformer transformer;$/;"	f	class:EventField	file:
+urlBase	.\src\main\java\test\TaskClient.java	/^    private String urlBase = "http:\/\/localhost:8080\/pe2e-workflow\/workflow";$/;"	f	class:TaskClient	file:
+users	.\src\main\java\test\UserDAO.java	/^    private static Map<String, User> users;$/;"	f	class:UserDAO	file:
+validate	.\src\main\java\test\events\EventField.java	/^        public boolean validate(EventField field);$/;"	m	interface:EventField.Validator
+validate	.\src\main\java\test\events\EventField.java	/^    public List<String> validate(){$/;"	m	class:EventField
+validate	.\src\main\java\test\events\EventHelper.java	/^    public final Map<String,List<String>> validate(MultivaluedMap<String, String> form){$/;"	m	class:EventHelper
+validate	.\src\main\java\test\events\GenericResponse.java	/^        public boolean validate(EventField field){$/;"	m	class:GenericResponse.EnumValidator
+validators	.\src\main\java\test\events\EventField.java	/^    private List<EventField.Validator> validators;$/;"	f	class:EventField	file:
+value	.\src\main\java\test\events\EventField.java	/^    private String value;$/;"	f	class:EventField	file:
+workflowKey	.\src\main\java\test\events\EventField.java	/^    public final String workflowKey;$/;"	f	class:EventField

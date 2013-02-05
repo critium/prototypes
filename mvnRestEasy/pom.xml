@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>test</groupId>
+  <artifactId>sndbx</artifactId>
+  <packaging>war</packaging>
+  <version>1.0.0-SNAPSHOT</version>
+  <name>SNDBX</name>
+  <description>Sandobx</description>
+
+  <repositories>
+    <repository>
+      <id>jboss</id>
+      <url>http://repository.jboss.org/maven2</url>
+    </repository>
+  </repositories>
+  <dependencies>
+    <!-- core library -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxrs</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+
+    <!-- optional modules -->
+
+    <!-- JAXB support -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-jaxb-provider</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+    <!-- multipart/form-data and multipart/mixed support -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-multipart-provider</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+    <!-- Resteasy Server Cache -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-cache-core</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+    <!-- Ruby YAML support -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-yaml-provider</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+    <!-- JAXB + Atom support -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>resteasy-atom-provider</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+    <!-- Apache Abdera Integration -->
+    <!--
+       -<dependency>
+       -  <groupId>org.jboss.resteasy</groupId>
+       -  <artifactId>abdera-atom-provider</artifactId>
+       -  <version>2.3.1.GA</version>
+       -</dependency>
+       -->
+    <!-- Spring integration -->
+    <!--
+       -<dependency>
+       -  <groupId>org.jboss.resteasy</groupId>
+       -  <artifactId>resteasy-spring</artifactId>
+       -  <version>2.3.1.GA</version>
+       -</dependency>
+       -->
+    <!-- Guice integration -->
+    <!--
+       -<dependency>
+       -  <groupId>org.jboss.resteasy</groupId>
+       -  <artifactId>resteasy-guice</artifactId>
+       -  <version>2.3.1.GA</version>
+       -</dependency>
+       -->
+
+    <!-- Asynchronous HTTP support with JBossWeb -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>async-http-jbossweb</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+
+    <!-- Asynchronous HTTP support with Servlet 3.0 (Jetty 7 pre5) -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>async-http-servlet-3.0</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+
+    <!-- Asynchronous HTTP support with Tomcat 6 -->
+    <dependency>
+      <groupId>org.jboss.resteasy</groupId>
+      <artifactId>async-http-tomcat6</artifactId>
+      <version>2.3.1.GA</version>
+    </dependency>
+
+    <!-- jackson parser -->
+    <dependency>
+      <groupId>org.codehaus.jackson</groupId>
+      <artifactId>jackson-jaxrs</artifactId>
+      <version>1.9.11</version>
+    </dependency>
+
+    <!--begin jms client stuff-->
+    <dependency>
+      <groupId>javax.jms</groupId>
+      <artifactId>jms</artifactId>
+      <version>1.1</version>
+    </dependency>
+    <dependency>
+      <groupId>jboss</groupId>
+      <artifactId>jboss-j2ee</artifactId>
+      <version>3.2.1</version>
+    </dependency>
+    <dependency>
+      <artifactId>hornetq-core-client</artifactId>
+      <groupId>hornetq.core.client</groupId>
+      <version>0.0.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/localRepo/hornetq-core-client.jar</systemPath>
+    </dependency>
+    <dependency>
+      <artifactId>hornetq-jms-client</artifactId>
+      <groupId>hornetq.jms.client</groupId>
+      <version>0.0.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/localRepo/hornetq-jms-client.jar</systemPath>
+    </dependency>
+    <dependency>
+      <artifactId>jnp-client</artifactId>
+      <groupId>jnp.client</groupId>
+      <version>0.0.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/localRepo/jnp-client.jar</systemPath>
+    </dependency>
+    <dependency>
+      <artifactId>netty</artifactId>
+      <groupId>netty</groupId>
+      <version>0.0.1</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/localRepo/netty.jar</systemPath>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.10</version>
+    </dependency>
+    <!--end jms client stuff-->
+
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.mortbay.jetty</groupId>
+        <artifactId>maven-jetty-plugin</artifactId>
+        <version>6.1.22</version>
+        <configuration>
+          <scanIntervalSeconds>1</scanIntervalSeconds>
+          <scanTargets>
+            <scanTarget>src/test</scanTarget>
+          </scanTargets>
+        </configuration>
+        <dependencies>
+          <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1</version>
+            <type>jar</type>
+          </dependency>
+          <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-jcl</artifactId>
+            <version>1.0.1</version>
+            <type>jar</type>
+          </dependency>
+          <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.13</version>
+            <type>jar</type>
+          </dependency>
+        </dependencies>
+      </plugin>
+    </plugins>
+  </build>
+</project>
