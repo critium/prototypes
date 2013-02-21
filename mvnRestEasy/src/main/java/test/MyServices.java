@@ -9,6 +9,7 @@ public class MyServices extends Application  {
         // initialize restful services
         services.add(new UserService());
         services.add(new EventService());
+        services.add(new CaseService());
     }
 
     @Override

@@ -12,7 +12,11 @@ import org.jboss.resteasy.client.ClientResponse;
 import static org.junit.Assert.*;
 import org.junit.Test;
 
+/**
+ * Client side consumer to JBPM services.
+ */
 public class TaskClient {
+
     // should be DI'd
     private TaskFactory taskFactory = new TaskFactory();;
 
@@ -70,7 +74,6 @@ public class TaskClient {
         Task t = taskFactory.createTask(rawTaskJson, rawActionsJson);
         return t;
     }
-
     String getTask(String taskId){
         String url = taskURL.replace("{task}", taskId);;
         return GET(url, JSON);

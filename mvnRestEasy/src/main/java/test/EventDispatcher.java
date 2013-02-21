@@ -18,6 +18,9 @@ import javax.jms.MapMessage;
 import test.events.EventField;
 import test.events.Event;
 
+/**
+ * Prototpe of event dispatcher.  Everything is public :(
+ */
 public class EventDispatcher {
 	private static Context ic = null;
 	private static ConnectionFactory cf = null;
@@ -78,6 +81,8 @@ public class EventDispatcher {
 				throw e;
 			}
 		}
+
+        session = null;
 		closeConnection(connection);
 
     }
@@ -86,7 +91,7 @@ public class EventDispatcher {
 		Properties p = new Properties();
 		p.put(Context.INITIAL_CONTEXT_FACTORY, "org.jnp.interfaces.NamingContextFactory");
 		p.put(Context.URL_PKG_PREFIXES, " org.jboss.naming:org.jnp.interfaces");
-		p.put(Context.PROVIDER_URL, "jnp://localhost:1099");
+		p.put(Context.PROVIDER_URL, "jnp://localhost:1199");
 
 		return new javax.naming.InitialContext(p);
 	}
@@ -105,35 +110,34 @@ public class EventDispatcher {
                 .setString(field.workflowKey, field.getWorkflowValue());
         }
 
-/*
- *        message.setString("contextType", event.namespace);
- *
- *        // fill in the rest of the standard event fields
- *        message.setString("contextId", event.contextId);
- *        message.setString("source", event.source);
- *        message.setString("timestamp", event.timestamp.toString());
- *
- *        // this is hacky, should be changed on the workflow side to make it
- *        // cleaner.  The next 2 lines are redundant.
- *        if(event.type == null){
- *            message.setString(event.type, "signed");
- *            message.setString("eventType", event.type);
- *        }
- *
- *        // more hacky...we should get rid of office_action_id
- *        message.setString("office_action_id", event.contextId);
- *
- *        // fill in the nonstandard event fields.
- *        Map<String,String> context = event.getContext();
- *        Set<String> names = context.keySet();
- *        for(String name: names){
- *            System.out.println(name + " " + context.get(name));
- *            message.setString(name, context.get(name));
- *        }
- */
+        //done crafting message.  Now send it.
+		getPublisher().send(message);
+
+        try {
+            closeQueueConnection();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+		System.out.println("Emitting Event of type: " + eventType);
+    }
+
+    /**
+     * Emit just the raw message as passed from the EventService.
+     */
+    public static void emit(Map<String, String> rawMessage) throws JMSException {
+		MapMessage message = getSession().createMapMessage();
+        Set<String> keys = rawMessage.keySet();
+
+        for(String key: keys) {
+            message.setString(key, rawMessage.get(key));
+        }
 
         //done crafting message.  Now send it.
 		getPublisher().send(message);
-		System.out.println("Emitting Event of type: " + eventType);
+        try {
+            closeQueueConnection();
+        } catch (Exception e){
+            e.printStackTrace();
+        }
     }
 }

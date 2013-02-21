@@ -9,6 +9,12 @@
   <name>SNDBX</name>
   <description>Sandobx</description>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <brms-version>5.3.0.BRMS</brms-version>
+    <brms-group>org.jbpm</brms-group>
+  </properties>
+
   <repositories>
     <repository>
       <id>jboss</id>
@@ -115,37 +121,29 @@
       <version>1.1</version>
     </dependency>
     <dependency>
-      <groupId>jboss</groupId>
       <artifactId>jboss-j2ee</artifactId>
+      <groupId>jboss</groupId>
       <version>3.2.1</version>
     </dependency>
     <dependency>
-      <artifactId>hornetq-core-client</artifactId>
-      <groupId>hornetq.core.client</groupId>
-      <version>0.0.1</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/localRepo/hornetq-core-client.jar</systemPath>
+			<artifactId>hornetq-core-client</artifactId>
+      <groupId>${brms-group}</groupId>
+      <version>${brms-version}</version>
     </dependency>
     <dependency>
-      <artifactId>hornetq-jms-client</artifactId>
-      <groupId>hornetq.jms.client</groupId>
-      <version>0.0.1</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/localRepo/hornetq-jms-client.jar</systemPath>
+			<artifactId>hornetq-jms-client</artifactId>
+      <groupId>${brms-group}</groupId>
+      <version>${brms-version}</version>
     </dependency>
     <dependency>
       <artifactId>jnp-client</artifactId>
-      <groupId>jnp.client</groupId>
-      <version>0.0.1</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/localRepo/jnp-client.jar</systemPath>
+      <groupId>${brms-group}</groupId>
+      <version>${brms-version}</version>
     </dependency>
     <dependency>
-      <artifactId>netty</artifactId>
-      <groupId>netty</groupId>
-      <version>0.0.1</version>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/localRepo/netty.jar</systemPath>
+			<artifactId>netty</artifactId>
+      <groupId>${brms-group}</groupId>
+      <version>${brms-version}</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
